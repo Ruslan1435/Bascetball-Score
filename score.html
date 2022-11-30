@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="score.css" />
+    <link
+      href="https://fonts.cdnfonts.com/css/cursed-timer-ulil"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    
+    
+  
+
+    <div class="container">
+
+      <div class="score-section">
+        <h3 class="board-title-home">HOME</h3>
+        <div class="home-score">
+          <h1 id="home-score" class="home-points-text">0</h1>
+        </div>
+        <div class="btn-section">
+
+          <button id="home-score-btn-1" onclick="homePlas1point()">+1</button>
+
+          <button id="homePlas2-btn" onclick="homePlas2point()">+2</button>
+
+          <button id="homePlas3-btn" onclick="homePlas3point()">+3</button>
+
+          <button id="start-over-btn" onclick="startOver()"> ↻ </button>
+        </div>
+      </div>
+
+      
+      <div> 
+        <p class="timer-section" id="countdown"> 15:00 </p>
+      </div>
+      
+    
+
+      <div class="score-section">
+        <h3 class="board-title-home">GUEST</h3>
+
+        <div class="home-score">
+            <h1 id="guest-score" class="home-points-text">0</h1>
+        </div>
+
+        <div class="btn-section">
+          <button onclick="guestPlas1Point()">+1</button>
+
+          <button onclick="guestPlas2Point()">+2</button>
+
+          <button onclick="guestPlas3Point()">+3</button>
+
+          
+          <script src="timer.js"></script>
+          <script src="score.js"></script>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </body>
+</html>
